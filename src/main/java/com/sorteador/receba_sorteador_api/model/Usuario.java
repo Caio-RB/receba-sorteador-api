@@ -21,8 +21,8 @@ public class Usuario {
     @Column(nullable = false)
     private boolean ganhou;
 
-    @Column(nullable = false, unique = true)
-    private Integer numero;
+    @Column(nullable = false)
+    private String numeros;  // Ex: "1,2,3"
 
     @Column
     private String filiado;
@@ -39,8 +39,8 @@ public class Usuario {
     public void setCelular(String celular) { this.celular = celular; }
     public boolean isGanhou() { return ganhou; }
     public void setGanhou(boolean ganhou) { this.ganhou = ganhou; }
-    public Integer getNumero() { return numero; }
-    public void setNumero(Integer numero) { this.numero = numero; }
+    public String getNumeros() { return numeros; }
+    public void setNumeros(String numeros) { this.numeros = numeros; }
     public String getFiliado() { return filiado; }
     public void setFiliado(String filiado) { this.filiado = filiado; }
     public LocalDate getData() { return data; }
