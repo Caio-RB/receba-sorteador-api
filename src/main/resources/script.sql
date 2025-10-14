@@ -10,6 +10,6 @@ CREATE TABLE IF NOT EXISTS usuario (
     ganhou BOOLEAN DEFAULT FALSE,
     filiado VARCHAR(255),
     data DATE NOT NULL,
-    CONSTRAINT tipo_celular CHECK (celular REGEXP '^[0-9]{9}$'),
+    CONSTRAINT tipo_celular CHECK (celular REGEXP '^[0-9]{11}$'),
     UNIQUE (celular)
 );
