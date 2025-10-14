@@ -15,7 +15,7 @@ public class Usuario {
     private String nome;
 
     @Column(nullable = false, unique = true)
-    @Pattern(regexp = "^[0-9]{9}$", message = "Celular deve ter 9 dígitos numéricos")
+    @Pattern(regexp = "^[0-9]{11}$", message = "Celular deve ter 9 dígitos numéricos + o DD")
     private String celular;
 
     @Column(nullable = false)
